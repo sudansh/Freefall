@@ -21,7 +21,7 @@ class FallAdapter :
 
     override fun onBindViewHolder(vh: RepoViewHolder, position: Int) {
         vh.itemView.date.text =
-            DateFormat.getDateInstance().format(data[position])
+            DateFormat.getDateInstance().format(data[position].date())
         vh.itemView.duration.text = "${data[position].duration} ms"
     }
 
